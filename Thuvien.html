@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thư viện - CloudMusic</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .library-main {
+        margin-top: 58px;
+        padding: 30px 40px;
+        min-height: calc(100vh - 58px);
+      }
+
+      .library-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .library-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+      }
+
+      .library-empty-text {
+        font-size: 14px;
+        color: #aaa;
+      }
+
+      .library-empty-text a {
+        color: #aaa;
+        text-decoration: underline;
+      }
+
+      .library-empty-text a:hover {
+        color: white;
+      }
+
+      .albums-grid {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+      }
+
+      .album-placeholder {
+        min-width: 160px;
+        width: 160px;
+        height: 160px;
+        background-color: #2a2a2a;
+        border-radius: 8px;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <div class="logo">
+            <a href="Trangchinh.html">
+              <img src="images/logo.png" alt="CloudMusic" class="logo-img" />
+            </a>
+          </div>
+        </div>
+        <div class="nav-left">
+          <a href="Trangchinh.html">Home</a>
+          <a href="feed.html">Feed</a>
+          <a href="Thuvien.html" class="active">Library</a>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search" />
+          <span class="search-icon">🔍</span>
+        </div>
+        <div class="nav-right">
+          <a href="upload.html">Upload</a>
+          <a href="login.html" class="login-btn">Login</a>
+          <a href="register.html" class="create-account">Create a account</a>
+          <span class="icon">🔔</span>
+          <span class="icon">✉️</span>
+          <span class="icon">⋯</span>
+        </div>
+      </div>
+    </header>
+    <main class="library-main">
+      <section class="library-section">
+        <div class="library-header">
+          <h2 class="library-title">Albums</h2>
+          <p class="library-empty-text">
+            You haven't liked any albums yet —
+            <a href="#">Browse trending playlists</a>
+          </p>
+        </div>
+        <div class="albums-grid">
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+        </div>
+      </section>
+      <section class="library-section">
+        <div class="library-header">
+          <h2 class="library-title">Playlist</h2>
+          <p class="library-empty-text">
+            You haven't liked any playlists yet —
+            <a href="#">Browse trending playlists</a>
+          </p>
+        </div>
+        <div class="albums-grid">
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+        </div>
+      </section>
+      <section class="library-section">
+        <div class="library-header">
+          <h2 class="library-title">Artists</h2>
+          <p class="library-empty-text">
+            You haven't liked any artists yet —
+            <a href="#">Browse artists</a>
+          </p>
+        </div>
+        <div class="albums-grid">
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+          <div class="album-placeholder"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
